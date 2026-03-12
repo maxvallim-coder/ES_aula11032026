@@ -7,27 +7,23 @@
 ## Arquivos Entregues
 
 ### Documento de Casos de Uso
-Nome do arquivo entregue: UC_nomealuno1_nomealuno2.md
+Nome do arquivo entregue: UC_ThiagoMafra_MatheusTesch.md
 
 ### Diagramas de Casos de Uso
-Arquivos entregues (PNG): DUC_XX_nomealuno1_nomealuno2.png, DUC_YY_nomealuno1_nomealuno2.png (Adicionar todos os diagramas enviados).
+Arquivos entregues (PNG): DUC_01_ThiagoMafra_MatheusTesch.png
 
 ## Issues Relacionadas
-> **Atenção:** As Issues devem ser **apenas referenciadas** — não utilize termos como *closes*, *fixes*, *resolve*.
+Entrega do documento de Casos de Uso e do Diagrama de Caso de Uso.
 
-- Relacionado à Issue **#1 – Documento de Casos de Uso**
-- Relacionado à Issue **#2 – Diagrama de Casos de Uso**
+Relacionado às Issues #1 e #2.
 
 ## Checklist Antes do Envio
 
 Marque cada linha após confirmar:
 
-- [ ] O documento contém **20 casos de uso completos**, seguindo o template do arquivo `/docs/casosdeuso.md`
-- [ ] O nome do arquivo segue o padrão exigido
-- [ ] Os diagramas representam **todos os casos de uso listados** no documento
-- [ ] Todos os diagramas estão em **formato PNG**
-- [ ] As Issues foram referenciadas corretamente
-- [ ] O PR contém **apenas** os arquivos exigidos
-
-## Observações (Opcional)
-Use este espaço caso queira explicar alguma decisão, dúvida ou comentário adicional.
+- [x] O documento contém **20 casos de uso completos**, seguindo o template do arquivo `/docs/casosdeuso.md`
+- [x] O nome do arquivo segue o padrão exigido
+- [x] Os diagramas representam **todos os casos de uso listados** no documento
+- [x] Todos os diagramas estão em **formato PNG**
+- [x] As Issues foram referenciadas corretamente
+- [x] O PR contém **apenas** os arquivos exigidos
