@@ -1,0 +1,23 @@
+@startuml
+title Gestão de Alunos - FitPass
+
+left to right direction
+
+actor Recepcionista
+actor Aluno
+
+rectangle "Sistema FitPass" {
+
+  usecase "UC01\nCadastrar Aluno" as UC01
+  usecase "UC02\nAtualizar Dados do Aluno" as UC02
+  usecase "UC03\nConsultar Cadastro do Aluno" as UC03
+
+}
+
+Recepcionista --> UC01
+Recepcionista --> UC02
+Recepcionista --> UC03
+
+Aluno --> UC03
+
+@enduml
