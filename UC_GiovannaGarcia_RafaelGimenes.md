@@ -1,5 +1,5 @@
 ## UC01 — Realizar Login
-### tor Principal
+### Ator Principal
 Usuário (Aluno, Recepcionista, Instrutor, Gerente)
 
 ### Objetivo
