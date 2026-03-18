@@ -8,6 +8,7 @@
 
 ## Diagrama de Casos de Uso
 
+<img width="600" height="2394" alt="DUC_01_EricGudera_IcaroGodoy" src="https://github.com/user-attachments/assets/a1b4df86-b64a-4480-8ba9-905ac2764b09" />
 
 ---
 
@@ -51,6 +52,7 @@ Permitir que o usuário acesse o sistema com suas credenciais.
 
 ### RN Relacionadas
 - RN06 — Acesso restrito por perfil
+
 
 ### Diagrama de Atividade
 
