@@ -1,0 +1,67 @@
+@startuml
+left to right direction
+
+actor Aluno
+actor Recepcionista
+actor Instrutor
+actor Gerente
+actor "Catraca RFID" as Catraca
+actor Sistema
+
+rectangle "Sistema FitPass Gym Management" {
+
+  (UC01 Realizar Login) as UC01
+  (UC02 Cadastrar Aluno no Sistema) as UC02
+  (UC03 Atualizar Cadastro de Aluno no Sistema) as UC03
+  (UC04 Criar Plano) as UC04
+  (UC05 Editar Plano) as UC05
+  (UC06 Registrar Pagamento) as UC06
+  (UC07 Verificar Regularidade do Aluno) as UC07
+  (UC08 Validar Entrada na Catraca) as UC08
+  (UC09 Visualizar Aulas Disponíveis) as UC09
+  (UC10 Agendar Aula) as UC10
+  (UC11 Cancelar Agendamento de Aula) as UC11
+  (UC12 Registrar Presença em Aula) as UC12
+  (UC13 Registrar Avaliação Física) as UC13
+  (UC14 Anexar Arquivo de Avaliação) as UC14
+  (UC15 Emitir Relatório de Inadimplência) as UC15
+  (UC16 Emitir Relatório de Alunos Ativos) as UC16
+  (UC17 Emitir Relatório de Acessos) as UC17
+  (UC18 Emitir Relatório de Ocupação de Aulas) as UC18
+  (UC19 Enviar Notificação de Vencimento) as UC19
+  (UC20 Enviar Notificação de Agendamento) as UC20
+  (UC20 Receber Notificação de Agendamento) as UC21
+  (UC19 Receber Notificação de Vencimento) as UC22
+
+}
+
+Aluno -- UC01
+
+Recepcionista -- UC02
+Recepcionista -- UC03
+Recepcionista -- UC06
+
+Gerente -- UC04
+Gerente -- UC05
+Gerente -- UC15
+Gerente -- UC16
+Gerente -- UC17
+Gerente -- UC18
+
+Instrutor -- UC12
+Instrutor -- UC13
+Instrutor -- UC14
+
+Aluno -- UC09
+Aluno -- UC10
+Aluno -- UC11
+Aluno -- UC21
+Aluno -- UC22
+
+Catraca -- UC08
+
+Sistema -- UC07
+Sistema -- UC19
+Sistema -- UC20
+
+@enduml
