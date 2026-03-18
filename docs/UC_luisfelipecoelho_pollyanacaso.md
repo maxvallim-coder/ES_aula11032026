@@ -263,3 +263,468 @@ Permitir cancelamento de reserva em aula.
 
 ### **RN Relacionadas**
 - RN03 — Cancelamento até 1 hora antes
+
+---
+
+# UC08 — Registrar Presença em Aula
+
+*Ator Principal*
+Instrutor
+
+*Objetivo*
+Registrar presença dos alunos participantes da aula.
+
+*Pré-condições*
+Aula deve estar agendada.
+
+*Pós-condições*
+Presença registrada.
+
+*Fluxo Principal*
+Instrutor acessa aula programada.
+Instrutor visualiza lista de alunos.
+Instrutor marca presença dos alunos.
+Sistema salva registro.
+
+*Fluxos Alternativos*
+
+*A1 — Aluno não compareceu:*
+Instrutor registra ausência.
+
+*RF Relacionados*
+RF07 — Lista de Presença
+
+*RNF Relacionados*
+RNF04 — Usabilidade
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC09 — Registrar Avaliação Física
+
+*Ator Principal*
+Instrutor
+
+*Objetivo*
+Registrar avaliação física do aluno.
+
+*Pré-condições*
+Aluno deve estar ativo e regular.
+
+*Pós-condições*
+Avaliação salva no histórico do aluno.
+
+*Fluxo Principal*
+Instrutor acessa cadastro do aluno.
+Instrutor registra dados da avaliação (peso, IMC, gordura).
+Sistema salva avaliação.
+
+*Fluxos Alternativos*
+
+*A1 — Aluno irregular:*
+Sistema impede registro da avaliação.
+
+*RF Relacionados*
+RF08 — Avaliação Física
+
+*RNF Relacionados*
+RNF02 — Segurança
+
+*RN Relacionadas*
+RN05 — Avaliação física apenas para alunos ativos
+
+---
+
+# UC10 — Emitir Relatório Gerencial
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Gerar relatórios de gestão da academia.
+
+*Pré-condições*
+Gerente autenticado no sistema.
+
+*Pós-condições*
+Relatório exibido ou exportado.
+
+*Fluxo Principal*
+Gerente acessa módulo de relatórios.
+Gerente escolhe tipo de relatório.
+Sistema processa dados.
+Sistema exibe relatório.
+
+*Fluxos Alternativos*
+
+*A1 — Falha na geração:*
+Sistema exibe erro.
+
+*RF Relacionados*
+RF09 — Relatórios Gerenciais
+
+*RNF Relacionados*
+RNF03 — Performance
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC11 — Criar Plano de Academia
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Permitir a criação de novos planos de academia.
+
+*Pré-condições*
+Gerente autenticado no sistema.
+
+*Pós-condições*
+Plano cadastrado e disponível para contratação.
+
+*Fluxo Principal*
+Gerente acessa o módulo de planos.
+Gerente seleciona a opção de criar plano.
+Gerente informa nome, valor, duração e características.
+Sistema valida os dados.
+Sistema salva o novo plano.
+
+*Fluxos Alternativos*
+
+*A1 — Dados incompletos:*
+Sistema solicita preenchimento dos campos obrigatórios.
+
+*RF Relacionados*
+RF02 — Gerenciamento de Planos
+
+*RNF Relacionados*
+RNF04 — Usabilidade
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC12 — Editar Plano
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Permitir a alteração das informações de um plano existente.
+
+*Pré-condições*
+Plano deve estar cadastrado no sistema.
+
+*Pós-condições*
+Informações do plano atualizadas.
+
+*Fluxo Principal*
+Gerente acessa lista de planos.
+Gerente seleciona um plano.
+Gerente altera informações desejadas.
+Sistema valida dados.
+Sistema salva alterações.
+
+*Fluxos Alternativos*
+
+*A1 — Dados inválidos:*
+Sistema exibe erro e solicita correção.
+
+*RF Relacionados*
+RF02 — Gerenciamento de Planos
+
+*RNF Relacionados*
+RNF04 — Usabilidade
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC13 — Ativar Plano
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Permitir ativar um plano para que possa ser contratado.
+
+*Pré-condições*
+Plano deve estar previamente cadastrado.
+
+*Pós-condições*
+Plano disponível para uso.
+
+*Fluxo Principal*
+Gerente acessa lista de planos.
+Gerente seleciona plano inativo.
+Gerente solicita ativação.
+Sistema altera status para ativo.
+
+*Fluxos Alternativos*
+
+*A1 — Plano já ativo:*
+Sistema informa que o plano já está disponível.
+
+*RF Relacionados*
+RF02 — Gerenciamento de Planos
+
+*RNF Relacionados*
+RNF04 — Usabilidade
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC14 — Desativar Plano
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Permitir desativar um plano existente.
+
+*Pré-condições*
+Plano cadastrado no sistema.
+
+*Pós-condições*
+Plano indisponível para novas contratações.
+
+*Fluxo Principal*
+Gerente acessa lista de planos.
+Gerente seleciona plano ativo.
+Gerente solicita desativação.
+Sistema altera status do plano para inativo.
+
+*Fluxos Alternativos*
+
+*A1 — Plano já inativo:*
+Sistema informa que o plano já está desativado.
+
+*RF Relacionados*
+RF02 — Gerenciamento de Planos
+
+*RNF Relacionados*
+RNF04 — Usabilidade
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC15 — Consultar Horários de Aula
+
+*Ator Principal*
+Aluno
+
+*Objetivo*
+Permitir visualizar aulas disponíveis e horários.
+
+*Pré-condições*
+Aluno deve estar autenticado.
+
+*Pós-condições*
+Lista de aulas exibida.
+
+*Fluxo Principal*
+Aluno acessa módulo de aulas.
+Sistema consulta aulas cadastradas.
+Sistema exibe horários e vagas disponíveis.
+
+*Fluxos Alternativos*
+
+*A1 — Nenhuma aula disponível:*
+Sistema informa que não há aulas cadastradas.
+
+*RF Relacionados*
+RF06 — Agendamento de Aulas
+
+*RNF Relacionados*
+RNF04 — Usabilidade
+
+*RN Relacionadas*
+RN02 — Limite de vagas
+
+---
+
+# UC16 — Enviar Notificação de Vencimento
+
+*Ator Principal*
+Sistema
+
+*Objetivo*
+Notificar o aluno sobre vencimento da mensalidade.
+
+*Pré-condições*
+Aluno possui mensalidade próxima do vencimento.
+
+*Pós-condições*
+Aluno recebe notificação.
+
+*Fluxo Principal*
+Sistema verifica datas de vencimento.
+Sistema identifica mensalidades próximas do prazo.
+Sistema envia notificação ao aluno.
+
+*Fluxos Alternativos*
+
+*A1 — Falha no envio:*
+Sistema registra tentativa e agenda novo envio.
+
+*RF Relacionados*
+RF10 — Notificações
+
+*RNF Relacionados*
+RNF01 — Disponibilidade
+
+*RN Relacionadas*
+RN01 — Bloqueio por inadimplência
+
+---
+
+# UC17 — Enviar Confirmação de Agendamento
+
+*Ator Principal*
+Sistema
+
+*Objetivo*
+Confirmar para o aluno que o agendamento foi realizado.
+
+*Pré-condições*
+Agendamento de aula realizado.
+
+*Pós-condições*
+Aluno recebe confirmação.
+
+*Fluxo Principal*
+Sistema registra agendamento.
+Sistema gera mensagem de confirmação.
+Sistema envia notificação ao aluno.
+
+*Fluxos Alternativos*
+
+*A1 — Falha na notificação:*
+Sistema registra erro.
+
+*RF Relacionados*
+RF10 — Notificações
+
+*RNF Relacionados*
+RNF01 — Disponibilidade
+
+*RN Relacionadas*
+RN02 — Limite de vagas
+
+---
+
+# UC18 — Enviar Notificação de Nova Avaliação
+
+*Ator Principal*
+Sistema
+
+*Objetivo*
+Informar ao aluno que uma nova avaliação física está disponível.
+
+*Pré-condições*
+Avaliação física registrada no sistema.
+
+*Pós-condições*
+Aluno recebe notificação.
+
+*Fluxo Principal*
+Sistema detecta nova avaliação registrada.
+Sistema gera mensagem.
+Sistema envia notificação ao aluno.
+
+*Fluxos Alternativos*
+
+*A1 — Falha no envio:*
+Sistema registra tentativa de envio.
+
+*RF Relacionados*
+RF10 — Notificações
+
+*RNF Relacionados*
+RNF01 — Disponibilidade
+
+*RN Relacionadas*
+RN05 — Avaliação física
+
+---
+
+# UC19 — Consultar Histórico de Acessos
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Visualizar histórico de entradas dos alunos na academia.
+
+*Pré-condições*
+Registros de acesso devem existir.
+
+*Pós-condições*
+Histórico exibido.
+
+*Fluxo Principal*
+Gerente acessa módulo de relatórios.
+Gerente seleciona relatório de acessos.
+Sistema consulta banco de dados.
+Sistema exibe histórico.
+
+*Fluxos Alternativos*
+
+*A1 — Nenhum registro encontrado:*
+Sistema informa ausência de dados.
+
+*RF Relacionados*
+RF09 — Relatórios Gerenciais
+
+*RNF Relacionados*
+RNF03 — Performance
+
+*RN Relacionadas*
+RN06 — Acesso restrito por perfil
+
+---
+
+# UC20 — Consultar Ocupação das Aulas
+
+*Ator Principal*
+Gerente
+
+*Objetivo*
+Visualizar taxa de ocupação das aulas da academia.
+
+*Pré-condições*
+Aulas cadastradas no sistema.
+
+*Pós-condições*
+Relatório de ocupação exibido.
+
+*Fluxo Principal*
+Gerente acessa relatórios.
+Gerente seleciona relatório de ocupação.
+Sistema calcula vagas preenchidas por aula.
+Sistema exibe resultados.
+
+*Fluxos Alternativos*
+
+*A1 — Falha no processamento:*
+Sistema exibe erro.
+
+*RF Relacionados*
+RF09 — Relatórios Gerenciais
+
+*RNF Relacionados*
+RNF03 — Performance
+
+*RN Relacionadas*
+RN02 — Limite de vagas
